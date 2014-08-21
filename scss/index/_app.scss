@@ -1,0 +1,89 @@
+/**********************************************************************/
+/************************** WHAT WE DO *******************************/
+/********************************************************************/
+
+	#featureWrap {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+	#featureWrap .icon {
+		-webkit-transition:All 0.2s linear;
+		-moz-transition:All 0.2s linear;
+		-o-transition:All 0.2s linear;
+	}
+	#featureWrap .fa-stack.icnC {
+	    color: #428BCA;
+	    font-size: 74px;
+	}
+	#featureWrap .icon {
+		background-color: #428BCA;
+	    border: 4px solid #428BCA;
+	    border-radius: 50%;
+	    color: #FFFFFF;
+	    display: block;
+	    font-size: 80px;
+	    height: 148px;
+	    line-height: 140px;
+	    margin: 0 auto;
+	    padding: 0;
+	    text-align: center;
+	    width: 148px;
+	}
+	#featureWrap .icon:hover {
+	    color: #428BCA;
+		background-color: #fff;
+	    cursor: default;
+	}
+	#featureWrap h3 {
+		font-weight: 700;
+	}
+
+/**********************************************************************/
+/************************** JUMBOTRON ********************************/
+/********************************************************************/
+
+	.jumbotron {
+		background: url(https://raw.githubusercontent.com/HansUXdev/portfolio/gh-pages/assets/img/bg.PNG) no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		padding-bottom: 0;
+	    padding-top: 140px;
+		color: #fff;
+		margin-bottom: 0;
+	}
+	.jumbotron .mobile {
+		background-image: url(../assets/img/mobile.png);
+	    background-repeat: no-repeat;
+	    height: 499px;
+	    margin-left: -96px;
+	    margin-top: 0;
+	    overflow: hidden;
+	    width: auto;
+	}
+	.jumbotron h1 {
+		color: #fff;
+	    font-size: 54px;
+	    font-weight: 700;
+		text-shadow: 0 1px 5px #222222;
+	}
+	.jumbotron h2 {
+		color: #fff;
+		font-weight: 300;
+		text-shadow: 0 1px 5px #222222;
+		margin-bottom: 30px;
+	}
+	.jumbotron .actionBtn .line1 {
+		display: inline-block;
+	    font-size: 14px;
+	    font-weight: 400;
+	    width: 140px;
+		margin-top: 10px;
+	}
+	.jumbotron .actionBtn .line2 {
+		font-size: 28px;
+	    font-weight: 700;
+		line-height: 1;
+		
+	}

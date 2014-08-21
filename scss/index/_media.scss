@@ -1,0 +1,98 @@
+/**********************************************************************/
+/****************** MEDIA QUERIES ************************************/
+/********************************************************************/
+
+@media(max-width:1200px){
+	.jumbotron .mobile {
+		margin-left: -164px;
+		width: 560px !important;
+		// max-width: 560px;
+	}
+}
+@media(max-width:979px){
+	.navbar-collapse {
+		float: right;
+	}
+	.navbar-inverse .navbar-nav > li > a {
+		font-size: 16px;
+		padding: 25px 12px;
+	}
+	.navbar > .container .navbar-brand,
+	.navbar > .container-fluid .navbar-brand {
+		font-size: 28px;
+		float: left;
+		margin: 15px 0;
+		width: auto;	
+	}
+	.navbar-inverse .navbar-brand .fa-stack {
+		font-size: 22px;
+	}
+	.navbar-nav {
+		float: left;
+	}
+	.jumbotron {
+		padding-top: 100px;
+	}
+	.jumbotron .jumboText {
+		text-align: center;
+	}
+	.jumbotron h1 {
+		font-size: 45px !important;
+	}
+	.jumbotron .actionBtn {
+		margin-bottom: 50px;
+	}
+	.jumbotron .mobile {
+		margin-left: -48px;
+		position: relative;
+		left: 2em;
+	}
+	#productWrap .imgWrap img {
+		margin: 0 auto 60px;
+	}
+	#contactWrap .blurb {
+		font-size: 20px;
+	}
+
+}
+@media (max-width: 767px) {
+	.navbar-collapse {
+		float: none;
+	}
+	.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+		float: left;
+		margin: 15px 0 15px 15px;
+	}
+	.navbar-inverse .navbar-nav > li > a {
+		font-size: 14px;
+		padding: 12px 15px;
+	}
+	.jumbotron {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.jumbotron h1 {
+		font-size: 48px;
+	}
+	.jumbotron h2 {
+		font-size: 22px;
+	}
+	
+	#featureWrap .feature {
+		margin-bottom: 40px;
+	}
+	#productWrap .productFeatures .icon {
+		font-size: 14px;
+	}
+	#pricingWrap .priceTable {
+		margin-bottom: 60px;
+	}
+}
+
+
+// position appslider
+@media(max-width:1200px){
+	#topWrap.jumbotron .mobile{
+
+	}
+}
