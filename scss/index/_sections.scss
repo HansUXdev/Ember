@@ -1,0 +1,39 @@
+@import "variables";
+
+@media(max-width:767px) {
+    section {
+        padding: 75px 0;
+    }
+
+    section.first {
+        padding-top: 75px;
+    }
+}
+
+section {
+    padding: 100px 0;
+}
+    section h2 {
+    margin: 0;
+    font-size: 3em;
+    text-align: center;
+    }
+#about {
+    // background: url(../assets/img/bg.png) no-repeat center center fixed;
+    background-size: 100% 100%;
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*#18bc9c*/
+    //position: relative;
+    //top: -7em;
+}
+
+
+
+

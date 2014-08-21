@@ -1,0 +1,72 @@
+@import "mixins";
+
+
+#iWatch {
+	font-family: Helvetica, Arial;
+	font-size: 14px;
+	width: 400px;
+	height: 400px;
+	border-radius: 50%;
+	margin: 0 0 25px 20px;
+	position: relative;
+	border: 3px solid #111;
+	overflow: visible;
+	box-shadow: 0 0 20px #aaa;
+	background: #000;
+	// Use Mixin
+	background: -moz-linear-gradient(45deg, rgba(0, 0, 0, 1) 0, rgba(68, 68, 68, 1) 100%);
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(0, 0, 0, 1)), color-stop(100%, rgba(68, 68, 68, 1)));
+	background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 1) 0, rgba(68, 68, 68, 1) 100%);
+	background: -o-linear-gradient(45deg, rgba(0, 0, 0, 1) 0, rgba(68, 68, 68, 1) 100%);
+	background: -ms-linear-gradient(45deg, rgba(0, 0, 0, 1) 0, rgba(68, 68, 68, 1) 100%);
+	background: linear-gradient(45deg, rgba(0, 0, 0, 1) 0, rgba(68, 68, 68, 1) 100%);
+
+	.locked .lock-screen {
+	display: block;
+	}
+}
+	.inner-1 {
+		width: 332px;
+		height: 332px;
+		border: 1px solid #555;
+		border-radius: 50%;
+		@include abs-pos(34px,0,0,37px);
+		// position: absolute;
+		// top: 34px;
+		// left: 37px;
+	}
+	.inner-2 {
+		width: 332px;
+		height: 332px;
+		border: 2px solid #111;
+		border-radius: 50%;
+		@include abs-pos(0,0,0,0);
+		// top: 0px;
+		// left: 0px;
+		// position: absolute;
+	}
+
+
+
+
+.screen {
+	// position: absolute;
+	// top: 4px;
+	// left: 5px;
+	@include abs-pos(4px,0,0,5px);
+	border-radius: 50%;
+	background: #111;
+	width: 320px; 	height: 320px;
+	overflow: hidden;
+}
+
+.screen-inner {
+width: 320px;
+height: 320px;
+border-radius: 50%;
+margin: 4px;
+}
+
+
+
+

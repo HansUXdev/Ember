@@ -1,0 +1,103 @@
+
+// Absolute Positioned
+@mixin abs-pos ($top: auto, $right: auto, $bottom: auto, $left: auto) {
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  position: absolute;
+}
+
+// Relitive Positioned
+@mixin rel-pos ($top: auto, $right: auto, $bottom: auto, $left: auto) {
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  position: relative;
+}
+
+
+
+
+
+
+// Gradients
+@mixin vertical-gradient($start: #000, $stop: #FFF) { background: ($start + $stop) / 2;
+    background: -webkit-gradient(linear, left top, left bottom, from($start), to($stop));
+    background: -moz-linear-gradient(center top, $start 0%, $stop 100%);
+    background: -moz-gradient(center top, $start 0%, $stop 100%);
+}
+@mixin vertical-gradient-with-image($image, $start: #000, $stop: #FFF) {
+    background: ($start + $stop) / 2 $image;
+    background: $image, -webkit-gradient(linear, left top, left bottom, from($start), to($stop));
+    background: $image, -moz-linear-gradient(center top, $start 0%, $stop 100%);
+    background: $image, -moz-gradient(center top, $start 0%, $stop 100%);
+}
+
+
+// Cross browser opacity
+  @mixin opacity($opacity) {
+    opacity: $opacity;
+    $opacity-ie: $opacity * 100;
+    filter: alpha(opacity=$opacity-ie); //IE8
+  }
+
+
+// Box Sizing
+  @mixin box-sizing($box-model) {
+    -webkit-box-sizing: $box-model; // Safari <= 5
+       -moz-box-sizing: $box-model; // Firefox <= 19
+            box-sizing: $box-model;
+  }
+
+// Border Radius
+  @mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    border-radius: $radius;
+    background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+  }
+
+// Single & Multi side Border-Radius
+  @mixin multi-border-radius($topLeft: 5px, $topRight: 5px, $bottomRight: 5px, $bottomLeft: 5px) {
+      -webkit-border-top-left-radius: $topLeft;
+      -webkit-border-top-right-radius: $topRight;
+      -webkit-border-bottom-right-radius: $bottomRight;
+      -webkit-border-bottom-left-radius: $bottomLeft;
+      -moz-border-radius-topleft: $topLeft;
+      -moz-border-radius-topright: $topRight;
+      -moz-border-radius-bottomright: $bottomRight;
+      -moz-border-radius-bottomleft: $bottomLeft;
+      border-top-left-radius: $topLeft;
+      border-top-right-radius: $topRight;
+      border-bottom-right-radius: $bottomRight;
+      border-bottom-left-radius: $bottomLeft;
+  }
+  @mixin border-top-radius($radius) {
+    -webkit-border-top-right-radius: $radius;
+    border-top-right-radius: $radius;
+     -webkit-border-top-left-radius: $radius;
+     border-top-left-radius: $radius;
+     background-clip: padding-box;
+  }
+  @mixin border-right-radius($radius) {
+    -webkit-border-bottom-right-radius: $radius;
+    border-bottom-right-radius: $radius;
+       -webkit-border-top-right-radius: $radius;
+       border-top-right-radius: $radius;
+       background-clip: padding-box;
+  }
+  @mixin border-bottom-radius($radius) {
+    -webkit-border-bottom-right-radius: $radius;
+    border-bottom-right-radius: $radius;
+     -webkit-border-bottom-left-radius: $radius;
+     border-bottom-left-radius: $radius;
+     background-clip: padding-box;
+  }
+  @mixin border-left-radius($radius) {
+    -webkit-border-bottom-left-radius: $radius;
+    border-bottom-left-radius: $radius;
+       -webkit-border-top-left-radius: $radius;
+       border-top-left-radius: $radius;
+       background-clip: padding-box;
+  }

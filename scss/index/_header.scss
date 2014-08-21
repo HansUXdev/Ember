@@ -1,0 +1,55 @@
+@import "variables";
+
+header {
+    background: url(https://raw.githubusercontent.com/HansUXdev/portfolio/gh-pages/assets/img/bigBG.jpg) no-repeat center center fixed;
+    background-size: 100% 100%;
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    // text-align: center;
+    // color: #fff;
+    // background: $header-bg;
+    position: relative;
+    bottom: 7em;
+    
+    .container {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+    img {
+        display: block;
+        margin: 0 auto 20px;
+        /*Make Circle*/
+        border-radius: 50%;
+    }
+    .intro-text .name {
+        display: block;
+        text-transform: uppercase;
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 2em;
+        font-weight: 700;
+    }
+    .intro-text .skills {
+        font-size: 1.25em;
+        font-weight: 300;
+    }
+}
+
+@media(min-width:768px) {
+    header .container {
+        padding: 200px 0 100px;
+    }
+
+    header .intro-text .name {
+        font-size: 5em;
+    }
+
+    header .intro-text .skills {
+        font-size: 1.75em;
+    }
+}
